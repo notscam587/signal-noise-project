@@ -24,24 +24,23 @@ nav a {
   inset: 0;
   pointer-events: none;
   background: url("256x256_Dissolve_Noise_Texture.png");
-  opacity: 0.02; /* starts very faint */
-  animation: staticMove 0.6s steps(2) infinite;
-  transition: opacity 2s ease;
+  opacity: 0.05;
+  animation: staticMove 0.3s steps(2) infinite;
 }
 
 @keyframes staticMove {
-  0% { transform: translate(0, 0); }
-  25% { transform: translate(-5%, 5%); }
-  50% { transform: translate(5%, -5%); }
-  75% { transform: translate(-3%, 3%); }
-  100% { transform: translate(0, 0); }
+  0% { transform: translate(0,0); }
+  25% { transform: translate(-5%,5%); }
+  50% { transform: translate(5%,-5%); }
+  75% { transform: translate(-3%,3%); }
+  100% { transform: translate(0,0); }
 }
 
 @keyframes flicker {
   0% { opacity: 1; }
-  48% { opacity: 1; }
-  49% { opacity: 0.92; }
-  50% { opacity: 1; }
+  92% { opacity: 1; }
+  94% { opacity: 0.85; }
+  96% { opacity: 1; }
   100% { opacity: 1; }
 }
 
@@ -49,30 +48,11 @@ nav a {
   animation: flicker 5s infinite;
 }
 
-.distort {
-  display: inline-block;
+.distort:hover {
+  letter-spacing: 4px;
   transition: 0.2s ease;
 }
 
-.distort:hover {
-  letter-spacing: 4px;
-}
-
-.dark h1 {
-  letter-spacing: 2px;
-  font-weight: 300;
-}
-
-.dark p {
-  max-width: 600px;
-  line-height: 1.8;
-  font-size: 18px;
-}
-
-.dark p:nth-of-type(odd) {
-  opacity: 0.70;
-}
-
 .drift {
-  transform: translateX(4px);
+  transform: translateX(2px);
 }
