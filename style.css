@@ -70,9 +70,9 @@ nav a {
 }
 
 .dark p:nth-of-type(odd) {
-  opacity: 0.95;
+  opacity: 0.90;
 }
 
 .drift {
-  transform: translateX(2px);
+  transform: translateX(4px);
 }
