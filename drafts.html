@@ -16,5 +16,14 @@
   UNSENT_02_47
 </p>
 
+<script>
+if (localStorage.getItem("visitedSpiral") === "true") {
+  let link = document.getElementById("unsentLink");
+  link.style.opacity = "1";
+  link.style.pointerEvents = "auto";
+  link.innerHTML = '<a href="unsent_0247.html" style="color:white;">UNSENT_02_47</a>';
+}
+</script>
+  
 </body>
 </html>
