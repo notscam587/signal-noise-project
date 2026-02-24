@@ -24,7 +24,7 @@ nav a {
   inset: 0;
   pointer-events: none;
   background: url("256x256_Dissolve_Noise_Texture.png");
-  opacity: 0.04;
+  opacity: 0.06;
   animation: staticMove 0.2s steps(2) infinite;
 }
 
