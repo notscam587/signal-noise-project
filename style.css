@@ -43,9 +43,9 @@ nav a {
   pointer-events: none;
   background: repeating-linear-gradient(
     0deg,
-    rgba(255,255,255,0.02),
-    rgba(255,255,255,0.02) 1px,
-    transparent 1px,
-    transparent 2px
+    rgba(255,255,255,0.1),
+    rgba(255,255,255,0.1) 2px,
+    transparent 2px,
+    transparent 4px
   );
 }
