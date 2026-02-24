@@ -72,3 +72,7 @@ nav a {
 .dark p:nth-of-type(odd) {
   opacity: 0.9;
 }
+
+.drift {
+  transform: translateX(2px);
+}
