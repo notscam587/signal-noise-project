@@ -13,7 +13,7 @@ if (word) {
   setInterval(function(){
     i = (i + 1) % states.length;
     word.textContent = states[i];
-  }, 3000);
+  }, 1000);
 }
 
 // Static fade in
