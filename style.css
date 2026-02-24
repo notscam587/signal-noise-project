@@ -16,22 +16,10 @@ nav a {
   color: #fff;
 
   background-image:
-    radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
-    radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
+    radial-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+    radial-gradient(rgba(255,255,255,0.01) 1px, transparent 1px);
 
-  background-size: 3px 3px, 5px 5px;
-}
-
-@keyframes grainShift {
-  0%   { background-position: 0 0, 0 0; }
-  25%  { background-position: 1px -1px, -1px 1px; }
-  50%  { background-position: -1px 1px, 1px -1px; }
-  75%  { background-position: 1px 1px, -1px -1px; }
-  100% { background-position: 0 0, 0 0; }
-}
-
-.dark {
-  animation: grainShift 0.4s infinite;
+  background-size: 6px 6px, 8px 8px;
 }
 
 @keyframes flicker {
