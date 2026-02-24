@@ -3,7 +3,7 @@ if (window.location.pathname.includes("log_247")) {
   localStorage.setItem("visitedSpiral", "true");
 }
 
-// Subtle shifting word effect
+// Word shift effect
 let word = document.getElementById("shiftWord");
 
 if (word) {
@@ -15,20 +15,19 @@ if (word) {
     word.textContent = states[i];
   }, 3000);
 }
+
+// Static fade in
 let staticSound = document.getElementById("staticSound");
 
 if (staticSound) {
-  setTimeout(function(){
-    staticSound.volume = 0.2; // subtle
-    staticSound.play();
-  }, 0); // starts after 8 seconds
-}
+  staticSound.volume = 0;
+  staticSound.play();
 
-// Intensify static during spiral
-setTimeout(function() {
-  let styleSheet = document.styleSheets[0];
-  styleSheet.insertRule(
-    ".dark::before { opacity: 0.08 !important; animation: staticMove 0.2s steps(2) infinite !important; }",
-    styleSheet.cssRules.length
-  );
-}, 8000); // 8 seconds after page load
+  let fadeIn = setInterval(function() {
+    if (staticSound.volume < 0.2) {
+      staticSound.volume += 0.01;
+    } else {
+      clearInterval(fadeIn);
+    }
+  }, 200);
+}
