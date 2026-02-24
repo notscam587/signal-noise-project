@@ -22,6 +22,18 @@ nav a {
   background-size: 3px 3px, 5px 5px;
 }
 
+@keyframes grainShift {
+  0%   { background-position: 0 0, 0 0; }
+  25%  { background-position: 1px -1px, -1px 1px; }
+  50%  { background-position: -1px 1px, 1px -1px; }
+  75%  { background-position: 1px 1px, -1px -1px; }
+  100% { background-position: 0 0, 0 0; }
+}
+
+.dark {
+  animation: grainShift 0.4s infinite;
+}
+
 @keyframes flicker {
   0% { opacity: 1; }
   48% { opacity: 1; }
@@ -31,10 +43,29 @@ nav a {
 }
 
 .flicker {
-  animation: flicker 4s infinite;
+  animation: flicker 5s infinite;
+}
+
+.distort {
+  display: inline-block;
+  transition: 0.2s ease;
 }
 
 .distort:hover {
-  letter-spacing: 3px;
-  transition: 0.2s ease;
+  letter-spacing: 4px;
+}
+
+.dark h1 {
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.dark p {
+  max-width: 600px;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.dark p:nth-of-type(odd) {
+  opacity: 0.9;
 }
