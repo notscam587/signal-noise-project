@@ -16,5 +16,5 @@ if (staticSound) {
   setTimeout(function(){
     staticSound.volume = 0.2; // subtle
     staticSound.play();
-  }, 8000); // starts after 8 seconds
+  }, 0); // starts after 8 seconds
 }
