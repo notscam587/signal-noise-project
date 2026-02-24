@@ -10,3 +10,11 @@ if (word) {
     word.textContent = states[i];
   }, 3000);
 }
+let staticSound = document.getElementById("staticSound");
+
+if (staticSound) {
+  setTimeout(function(){
+    staticSound.volume = 0.2; // subtle
+    staticSound.play();
+  }, 8000); // starts after 8 seconds
+}
