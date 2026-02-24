@@ -1,3 +1,8 @@
+// Mark spiral as visited
+if (window.location.pathname.includes("log_247")) {
+  localStorage.setItem("visitedSpiral", "true");
+}
+
 // Subtle shifting word effect
 let word = document.getElementById("shiftWord");
 
