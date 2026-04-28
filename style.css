@@ -17,6 +17,19 @@ nav a {
   color: #555;
 }
 
+/* ORIGINAL WEBSITE (PAST) */
+.old {
+  background-color: #fdf6e3;
+  color: #333;
+  font-family: "Courier New", monospace;
+  padding: 40px;
+}
+
+/* links look older */
+.old a {
+  color: #0066cc;
+}
+
 .dark {
   margin: 0;
   padding: 40px;
