@@ -4,7 +4,9 @@ html, body {
   overflow-y: auto;
 }
 
+/* ========================= */
 /* GLOBAL BASE */
+/* ========================= */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -13,17 +15,29 @@ body {
   color: #333;
 }
 
-/* center content for readability */
+/* centered readable layout */
 .dark, .nat, .old {
   max-width: 900px;
   margin: auto;
 }
 
+/* paragraph spacing */
+p {
+  margin-bottom: 14px;
+}
+
+/* ========================= */
 /* NAVIGATION */
+/* ========================= */
+nav {
+  margin-bottom: 30px;
+}
+
 nav a {
   margin-right: 20px;
   text-decoration: none;
   color: #555;
+  font-size: 14px;
 }
 
 a {
@@ -44,15 +58,44 @@ a:hover {
   padding: 40px;
 }
 
-/* subtle structure */
+/* structure */
 .old h1 {
   border-bottom: 2px solid #ccc;
   padding-bottom: 10px;
 }
 
+.old h2 {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
 /* links */
 .old a {
   color: #0066cc;
+}
+
+/* ========================= */
+/* HIGH SCHOOL VERSION */
+/* ========================= */
+.hs {
+  filter: brightness(0.9) contrast(0.95);
+}
+
+/* flatter tone */
+.hs p {
+  opacity: 0.9;
+}
+
+/* more structured headings */
+.hs h2 {
+  font-size: 18px;
+  margin-top: 28px;
+  font-weight: bold;
+}
+
+/* duller links */
+.hs a {
+  color: #4a6ea8;
 }
 
 /* ========================= */
@@ -78,9 +121,14 @@ a:hover {
   animation: staticMove 0.3s steps(2) infinite;
 }
 
-/* slightly aggressive highlight */
+/* tension accent */
 .dark .drift {
   color: #ff4d4d;
+}
+
+/* spacing */
+.dark p {
+  margin-bottom: 16px;
 }
 
 /* links */
@@ -100,7 +148,7 @@ a:hover {
   line-height: 1.9;
 }
 
-/* subtle natural light texture */
+/* subtle light texture */
 .nat::before {
   content: "";
   position: fixed;
@@ -114,9 +162,10 @@ a:hover {
 .nat p {
   max-width: 680px;
   opacity: 0.9;
+  margin-bottom: 18px;
 }
 
-/* softer header */
+/* soft header */
 .nat h1 {
   font-weight: normal;
   letter-spacing: 2px;
@@ -129,7 +178,7 @@ a:hover {
 }
 
 /* ========================= */
-/* ANIMATIONS (SAFE KEEP) */
+/* ANIMATIONS */
 /* ========================= */
 @keyframes staticMove {
   0% { transform: translate(0,0); }
